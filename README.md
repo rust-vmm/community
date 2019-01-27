@@ -7,4 +7,4 @@
 ## Adding a new repository
 
 1. Create the repository on your personal GitHub account.
-1. Submit a new issue [review request issue](https://github.com/rust-vmm/community/issues/new?assignees=&labels=&template=repository-review-request.md&title=Repository%2FCrate+Review+Request).
+1. Submit a new [review request issue](https://github.com/rust-vmm/community/issues/new?assignees=&labels=&template=repository-review-request.md&title=Repository%2FCrate+Review+Request).
