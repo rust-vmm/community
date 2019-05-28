@@ -1,9 +1,5 @@
 # Community
 
-## Become a member of rust-vmm
-
-1. Submit a new [access request issue](https://github.com/rust-vmm/community/issues/new?assignees=andreeaflorescu%2C+jbryce%2C+sameo&labels=&template=access-request-to-rust-vmm-organization.md&title=Access+Request+to+rust-vmm).
-
 ## How to contribute?
 
 ### Adding a new crate to rust-vmm
