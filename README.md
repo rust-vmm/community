@@ -54,10 +54,26 @@ corresponds to one
 
 ## Status of rust-vmm Components
 
-Keep in mind that this status might not always be up to date. For the latest
-status please check individual repositories.
+Each rust-vmm crate lives in its own repository. Depending on where the
+latest crate code is, the crate can be in one of 3 states:
 
-### Coming Soon
+1. `empty`: The crate repo exists but there is no code there yet. This
+   means the crate was created after a community acknowledgement about its
+   relevance to the project, but either no code has been submitted yet or
+   the initial code base is being reviewed through a pull request.
+
+1. `rust-vmm`: The code is a work in progress. Once it meets the production
+   [requirements](#publishing-on-cratesio---requirements-list), the crate
+   will be pushed to [crates.io](https://crates.io).
+
+1. `crates.io`: The crate is considered to be production ready. It can be
+   consumed from Rust's canonical crate registry:
+   [crates.io](https://crates.io). The crate repository in rust-vmm
+   is as a staging area until the next push to crates.io. In other words, the
+   production ready version of the code lives in crates.io while development
+   happens in the rust-vmm git repo.
+
+### empty
 
 These are the empty repositories that have PRs waiting to be merged.
 
@@ -74,21 +90,12 @@ These are the empty repositories that have PRs waiting to be merged.
 - [vmm-vcpu](https://github.com/rust-vmm/vmm-vcpu/): a hypervisor-agnostic
   abstraction for Virtual CPUs (vCPUs).
 
-### Existing Crates
-
-These are crates for which we have most of the code out there, but
-there might be some missing requirements for publishing them on crates.io.
-For the requirement list refer to the
-[Publishing on crates.io - Requirements list](#publishing-on-crates.io---requirements-list)
-section.
+### rust-vmm
 
 - [vm-memory](https://github.com/rust-vmm/vm-memory): abstractions over a
-  Virtual Machine memory.
+  virtual machine's memory.
 
-#### Components Published on [crates.io](crates.io)
-
-These are production-ready components that can be pulled as dependencies
-directly from crates.io.
+#### crates.io
 
 - [kvm-bindings](https://crates.io/crates/kvm-bindings): Rust FFI bindings
   to KVM generated using [bindgen](https://crates.io/crates/bindgen).
