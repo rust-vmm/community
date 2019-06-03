@@ -69,9 +69,10 @@ latest crate code is, the crate can be in one of 3 states:
 1. `crates.io`: The crate is considered to be production ready. It can be
    consumed from Rust's canonical crate registry:
    [crates.io](https://crates.io). The crate repository in rust-vmm
-   is as a staging area until the next push to crates.io. In other words, the
-   production ready version of the code lives in crates.io while development
-   happens in the rust-vmm git repo.
+   is as a staging area until the next push to [crates.io](https://crates.io).
+   In other words, the production ready version of the code lives in
+   [crates.io](https://crates.io) while development happens in the rust-vmm
+   git repo.
 
 ### empty
 
@@ -125,9 +126,9 @@ existing repositories under rust-vmm.
 
 ### Publishing on crates.io - Requirements List
 
-We consider crates published on crates.io to be production ready. In order to
-maintain a high security and quality standard, the following list of
-requirements must be checked before having the first version published:
+We consider crates published on [crates.io](https://crates.io) to be production
+ready. In order to maintain a high security and quality standard, the following
+list of requirements must be checked before having the first version published:
 
 - **High level documentation**. This documentation should be added
    to `src/lib.rs` and it will end up being the home page of the crate on
