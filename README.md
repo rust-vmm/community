@@ -1,22 +1,21 @@
 # Community
 
-## What is rust-vmm?
+## What Is rust-vmm?
 
-rust-vmm is an open-source project empowering the community to build custom
-Virtual Machine Monitors (VMMs) and Hypervisors. It provides a set of
+rust-vmm is an open-source project that empowers the community to build custom
+Virtual Machine Monitors (VMMs) and hypervisors. It provides a set of
 virtualization components that any project can use to quickly develop
 virtualization solutions while focusing on the key differentiators of their
 product rather than re-implementing common components like KVM wrappers, virtio
 devices and other VMM libraries.
 
-The rust-vmm project is organized as a shared-effort, shared-ownership
+The rust-vmm project is organized as a shared effort, shared ownership
 open-source project that includes (so far) contributors from Alibaba, AWS,
 Cloud Base, Crowdstrike, Intel, Google, Red Hat as well as individual
 contributors.
 
-Each virtualization component lives in a separated GitHub repository under the
-rust-vmm organization. The code is organized such that one repository
-corresponds to one
+Each virtualization component lives in a separate GitHub repository under the
+rust-vmm organization. One repository corresponds to one
 [Rust crate](https://doc.rust-lang.org/book/ch07-01-packages-and-crates-for-making-libraries-and-executables.html).
 
 ## Why rust-vmm?
@@ -27,7 +26,7 @@ corresponds to one
   [CrosVM](https://chromium.googlesource.com/chromiumos/platform/crosvm/) and
   [Firecracker](https://github.com/firecracker-microvm/firecracker/). These
   two projects have similar code for calling KVM ioctls, managing the
-  Virtual Machine memory, interacting with virtio devices and others. Instead
+  virtual machine memory, interacting with virtio devices and others. Instead
   of having these components live in each of the projects repositories, they
   can be shared through the rust-vmm project.
 - **Faster development**. rust-vmm provides a base of virtualization components
@@ -43,14 +42,14 @@ corresponds to one
   device implementation. We want to keep a high standard in terms of testing
   as these virtualization packages are going to be used in production by
   multiple projects. Each component is individually tested with a set of
-  common integration tests responsible for running unit tests and linters
+  common build time tests responsible for running unit tests and linters
   (including coding style checks), and computing the coverage. In the future
   we are planning to test the integration of the rust-vmm components by
   providing a reference VMM implementation.
-- **Clean interface**. With shared crates you also have to think about an
-  interface flexible enough to be used by multiple VMMs. We have multiple
-  rounds of design reviews up to the point we are confident the interface is
-  clean and reusable by other projects.
+- **Clean interface**. As crates are shared between multiple VMMs, the interface has to be
+  flexible enough to be used by multiple VMMs. There are a few rounds of design
+  reviews up to the point we are confident the interface is clean and reusable
+  by other projects.
 
 ## Status of rust-vmm Components
 
@@ -86,8 +85,8 @@ These are the empty repositories that have PRs waiting to be merged.
   [bindgen](https://crates.io/crates/bindgen).
 - [vm-virtio](https://github.com/rust-vmm/vm-virtio/): virtio device trait and
   implementation for virtio primitives such as virtqueues and descriptor chain.
-- [vmm-sys-utils](https://github.com/rust-vmm/vmm-sys-util/): a collection of
-  modules providing helpers and utilities for building VMMs and Hypervisors.
+- [vmm-sys-utils](https://github.com/rust-vmm/vmm-sys-util/): collection of
+  modules providing helpers and utilities for building VMMs and hypervisors.
 - [vmm-vcpu](https://github.com/rust-vmm/vmm-vcpu/): a hypervisor-agnostic
   abstraction for Virtual CPUs (vCPUs).
 
@@ -107,21 +106,20 @@ These are the empty repositories that have PRs waiting to be merged.
 
 ### Adding a New Virtualization Component
 
-If you have an idea about a component that could be a great fit for rust-vmm,
-please open a
+If you a about a proposal about a new rust-vmm component, please open a
 [review request issue](https://github.com/rust-vmm/community/issues/new?assignees=&labels=&template=new-crate-request.md&title=Crate+Addition+Request).
 The issue must provide the explanations and justifications behind the need for
 a new component, highlighting the purpose of this new repository, how will it
-be used by other VMMs or Hypervisors, and other information that you find
+be used by other VMMs or hypervisors, and other information that you find
 relevant.
 
-Discussions about the proposal will happen on the same issue, and once an
-agreement is reached regarding the name (this part is hard!) and the design,
+Discussions about the proposal will take place on the same issue, and once an
+agreement is reached on the new crate name (this part is hard!) and design,
 an empty repository will be created in the rust-vmm GitHub organization.
 
 To add functionality you will need to send Pull Requests (PRs) against the
 newly created repository. While we do not expect the code to be perfect from
-the first try, we do want to keep a high standard in terms of quality for all
+the first try, we do enforce a high standard in terms of quality for all
 existing repositories under rust-vmm.
 
 ### Publishing on crates.io - Requirements List
@@ -132,28 +130,32 @@ list of requirements must be checked before having the first version published:
 
 - **High level documentation**. This documentation should be added
    to `src/lib.rs` and it will end up being the home page of the crate on
-   [docs.rs](https://docs.rs/). Here you should include information about what
-   is the crate suppose to do, how can it be used in other projects as well as
-   usage examples. Check out the
-   [kvm-ioctls docs](https://docs.rs/kvm-ioctls/0.1.0/kvm_ioctls/) for an
+   [docs.rs](https://docs.rs/). Include information about what this crate does,
+   how can it be used in other projects, as well as usage examples. Check out
+   the [kvm-ioctls docs](https://docs.rs/kvm-ioctls/0.1.0/kvm_ioctls/) for an
    example.
 - **Documentation for the public interface**. Everything belonging to the
   public interface of the crate must be properly documented. Where applicable,
-  the methods should also have usage examples. The code examples are
-  particularly useful because they are run when running the unit tests with
+  the methods should also have
+  [usage examples](https://doc.rust-lang.org/book/ch14-02-publishing-to-crates-io.html#making-useful-documentation-comments).
+  The code examples are particularly useful because they are run on
   `cargo test`. It is a nice way to ensure that your comments and examples
   don't go out of sync with the code. To make sure we don't miss anything this
-  rule is enforced by using `#![deny(missing-docs)]` in `src/lib.rs`.
-- **Unit Tests**
-- **Coverage**
-- **Integration Tests**. All components will eventually be tested using the
+  rule is enforceable by using `#![deny(missing-docs)]` in `src/lib.rs`.
+- **Unit Tests**.
+- **Coverage**. We expect all crates to have coverage tests that don't allow
+  the coverage to drop on new PRs.
+- **Build Time Tests**. All components will eventually be tested using the
   same common [Buildkite pipeline](https://buildkite.com/docs/pipelines). This
   is still WIP. The tests include style checks and other lint checks, a
   coverage test, builds with various configurations and on different
   architectures and operating systems.
-- **README.md**
-- **LICENSE**
-- **CODEOWNERS**
+- **README.md**. The readme contains high-level information about the crate.
+  The readme is the front page of the package on crates.io so ideally it also
+  has minimal examples on how to use the crate.
+  For in-depth design details, a DESIGN.md file can be created.
+- **LICENSE**.
+- **CODEOWNERS**.
 
 ### Versioning Crates - WIP
 
