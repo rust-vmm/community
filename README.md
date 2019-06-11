@@ -83,10 +83,6 @@ These are the empty repositories that have PRs waiting to be merged.
 - [virtio-bindings](https://github.com/rust-vmm/virtio-bindings): Rust FFI
   bindings to virtio kernel headers generated using
   [bindgen](https://crates.io/crates/bindgen).
-- [vm-virtio](https://github.com/rust-vmm/vm-virtio/): virtio device trait and
-  implementation for virtio primitives such as virtqueues and descriptor chain.
-- [vmm-sys-utils](https://github.com/rust-vmm/vmm-sys-util/): collection of
-  modules providing helpers and utilities for building VMMs and hypervisors.
 - [vmm-vcpu](https://github.com/rust-vmm/vmm-vcpu/): a hypervisor-agnostic
   abstraction for Virtual CPUs (vCPUs).
 
@@ -94,6 +90,10 @@ These are the empty repositories that have PRs waiting to be merged.
 
 - [vm-memory](https://github.com/rust-vmm/vm-memory): abstractions over a
   virtual machine's memory.
+- [vm-virtio](https://github.com/rust-vmm/vm-virtio/): virtio device trait and
+  implementation for virtio primitives such as virtqueues and descriptor chain.
+- [vmm-sys-util](https://github.com/rust-vmm/vmm-sys-util/): collection of
+  modules providing helpers and utilities for building VMMs and hypervisors.
 
 #### crates.io
 
