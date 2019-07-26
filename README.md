@@ -104,6 +104,21 @@ These are the empty repositories that have PRs waiting to be merged.
 
 ## Development
 
+### Join Us
+
+You can join our community on any of the following places:
+
+* Join our
+  [mailing list](http://lists.opendev.org/cgi-bin/mailman/listinfo/rust-vmm).
+
+* Join our
+  [sync meeting](http://lists.opendev.org/pipermail/rust-vmm/2019-January/000103.html)
+  every 2 weeks on Wednesdays. Before the meeting we update the
+  [agenda](https://etherpad.openstack.org/p/rust_vmm_2019_biweekly_calls).
+  If the agenda is empty, the meeting is cancelled one day before.
+
+* Join our [Slack channel](https://tinyurl.com/yyxm3rjh).
+
 ### Adding a New Virtualization Component
 
 If you a about a proposal about a new rust-vmm component, please open a
