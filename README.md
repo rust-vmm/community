@@ -121,7 +121,7 @@ You can join our community on any of the following places:
 
 ### Adding a New Virtualization Component
 
-If you a about a proposal about a new rust-vmm component, please open a
+If you have a proposal about a new rust-vmm component, please open a
 [review request issue](https://github.com/rust-vmm/community/issues/new?assignees=&labels=&template=new-crate-request.md&title=Crate+Addition+Request).
 The issue must provide the explanations and justifications behind the need for
 a new component, highlighting the purpose of this new repository, how will it
