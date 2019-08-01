@@ -144,11 +144,11 @@ ready. In order to maintain a high security and quality standard, the following
 list of requirements must be checked before having the first version published:
 
 - **High level documentation**. This documentation should be added
-   to `src/lib.rs` and it will end up being the home page of the crate on
-   [docs.rs](https://docs.rs/). Include information about what this crate does,
-   how can it be used in other projects, as well as usage examples. Check out
-   the [kvm-ioctls docs](https://docs.rs/kvm-ioctls/0.1.0/kvm_ioctls/) for an
-   example.
+  to `src/lib.rs` and it will end up being the home page of the crate on
+  [docs.rs](https://docs.rs/). Include information about what this crate does,
+  how can it be used in other projects, as well as usage examples. Check out
+  the [kvm-ioctls docs](https://docs.rs/kvm-ioctls/0.1.0/kvm_ioctls/) for an
+  example.
 - **Documentation for the public interface**. Everything belonging to the
   public interface of the crate must be properly documented. Where applicable,
   the methods should also have
