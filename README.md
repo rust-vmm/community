@@ -117,7 +117,8 @@ You can join our community on any of the following places:
   [agenda](https://etherpad.openstack.org/p/rust_vmm_2019_biweekly_calls).
   If the agenda is empty, the meeting is cancelled one day before.
 
-* Join our [Slack channel](https://tinyurl.com/yyxm3rjh).
+* Join our
+  [Slack channel](https://join.slack.com/t/rust-vmm/shared_invite/enQtODAxMzA2ODIyMTc2LWRhYjIwZmQ0YzUxODJlMTRhZWU2ZDBjYmJiNzBmOWVmYjg4MjY5YWRjYjM0YzQ5YzgyMTBmYzNlMjMzYmZlODU).
 
 ### Adding a New Virtualization Component
 
