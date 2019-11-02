@@ -16,7 +16,7 @@ contributors.
 
 Each virtualization component lives in a separate GitHub repository under the
 rust-vmm organization. One repository corresponds to one
-[Rust crate](https://doc.rust-lang.org/book/ch07-01-packages-and-crates-for-making-libraries-and-executables.html).
+[Rust crate](https://doc.rust-lang.org/stable/book/ch07-01-packages-and-crates.html).
 
 ## Why rust-vmm?
 
