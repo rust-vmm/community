@@ -77,23 +77,18 @@ latest crate code is, the crate can be in one of 3 states:
 
 These are the empty repositories that have PRs waiting to be merged.
 
-- [linux-loader](https://github.com/rust-vmm/linux-loader): parser and loader
-  for vmlinux and bzImage images as well as some other helpers for kernel
-  commandline.
-- [virtio-bindings](https://github.com/rust-vmm/virtio-bindings): Rust FFI
-  bindings to virtio kernel headers generated using
-  [bindgen](https://crates.io/crates/bindgen).
 - [vmm-vcpu](https://github.com/rust-vmm/vmm-vcpu/): a hypervisor-agnostic
   abstraction for Virtual CPUs (vCPUs).
 
 ### rust-vmm
 
-- [vm-memory](https://github.com/rust-vmm/vm-memory): abstractions over a
-  virtual machine's memory.
+- [event-manager](https://github.com/rust-vmm/event-manager): abstractions
+  for implementing event based systems.
+- [linux-loader](https://github.com/rust-vmm/linux-loader): parser and loader
+  for vmlinux and bzImage images as well as some other helpers for kernel
+  commandline.
 - [vm-virtio](https://github.com/rust-vmm/vm-virtio/): virtio device trait and
   implementation for virtio primitives such as virtqueues and descriptor chain.
-- [vmm-sys-util](https://github.com/rust-vmm/vmm-sys-util/): collection of
-  modules providing helpers and utilities for building VMMs and hypervisors.
 
 #### crates.io
 
@@ -101,6 +96,15 @@ These are the empty repositories that have PRs waiting to be merged.
   to KVM generated using [bindgen](https://crates.io/crates/bindgen).
 - [kvm-ioctls](https://crates.io/crates/kvm-ioctls): Safe wrappers over the
   KVM API.
+- [vfio-bindings](https://github.com/rust-vmm/vfio-bindings): Rust FFI
+  bindings for using the VFIO framework.
+- [virtio-bindings](https://github.com/rust-vmm/virtio-bindings): Rust FFI
+  bindings to virtio kernel headers generated using
+  [bindgen](https://crates.io/crates/bindgen).
+- [vm-memory](https://github.com/rust-vmm/vm-memory): abstractions over a
+  virtual machine's memory.
+- [vmm-sys-util](https://github.com/rust-vmm/vmm-sys-util/): collection of
+  modules providing helpers and utilities for building VMMs and hypervisors.
 
 ## Development
 
