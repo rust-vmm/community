@@ -182,45 +182,7 @@ list of requirements must be checked before having the first version published:
 All the rust-vmm repositories accept contributions by a
 [GitHub Pull Request (PR)](https://help.github.com/articles/using-pull-requests/).
 
-#### PR workflow
-
-After a PR is submitted against one of the rust-vmm repositories, it will be
-tested and reviewed:
-
-- The repository [continuous integration (CI)](#ci---wip) will automatically test
-  the submitted changes.
-
-- The PR changes will be [manually reviewed](#pr-review-and-approval). It is
-  expected that the PR author pushes new versions of the submitted changes
-  through the same PR, in order to address review comments.
-
-A PR can be merged into the repository once all CI tests pass and at least 2
-reviewers approved the submitted changes.
-
-#### PR review and approval
-
-A rust-vmm PR automatically gets 2 reviewers assigned to it. Both reviewers
-must approve the PR before it can be merged.
-
-PR reviewers are selected as follows:
-
-- If the repository has a `CODEOWNERS` file, both reviewers are randomly picked
-  from there.
-
-- If the repository does not have explicit code owners, both reviewers are
-  chosen from the rust-vmm [gate keepers](https://github.com/rust-vmm/community/GATEKEEPERS.md)
-  list.
-
-Sometimes a selected reviewer does not have the available bandwidth, time or
-expertise to do a proper review. In such cases a new reviewer must be assigned
-from either the repository code owners list or the rust-vmm gate keepers list.
-It is up to the initially assigned reviewer, or one of the rust-vmm gate keepers
-if the former is not available, to find the new reviewer.
-
-It is important to note that anyone outside of the repository code owners or the
-rust-vmm gate keepers lists is very welcome to review any pending PR. However,
-any resulting PR approval from an external reviewer will not count as one of the
-2 mandatory approvals for the PR to be mergeable.
+For more details, please check the [contributing document](CONTRIBUTING.md).
 
 ### Versioning Crates - WIP
 
