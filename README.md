@@ -114,13 +114,6 @@ You can join our community on any of the following places:
 
 * Join our
   [mailing list](http://lists.opendev.org/cgi-bin/mailman/listinfo/rust-vmm).
-
-* Join our
-  [sync meeting](http://lists.opendev.org/pipermail/rust-vmm/2019-January/000103.html)
-  every 2 weeks on Wednesdays. Before the meeting we update the
-  [agenda](https://etherpad.openstack.org/p/rust_vmm_2019_biweekly_calls).
-  If the agenda is empty, the meeting is cancelled one day before.
-
 * Join our
   [Slack channel](https://join.slack.com/t/rust-vmm/shared_invite/enQtODAxMzA2ODIyMTc2LWRhYjIwZmQ0YzUxODJlMTRhZWU2ZDBjYmJiNzBmOWVmYjg4MjY5YWRjYjM0YzQ5YzgyMTBmYzNlMjMzYmZlODU).
 
@@ -181,18 +174,17 @@ list of requirements must be checked before having the first version published:
 
 All the rust-vmm repositories accept contributions by a
 [GitHub Pull Request (PR)](https://help.github.com/articles/using-pull-requests/).
-
 For more details, please check the [contributing document](CONTRIBUTING.md).
 
+### CI
+
+We ensure that all rust-vmm components keep the same quality bar by using the
+[rust-vmm-ci](https://github.com/rust-vmm/rust-vmm-ci/). The rust-vmm-ci is
+built on top of [Buildkite](http://buildkite.com/), and added as a submodule
+to all rust-vmm repositories. For more details, please check the [rust-vmm-ci
+README](https://github.com/rust-vmm/rust-vmm-ci/).
+
 ### Versioning Crates - WIP
-
-This section is under construction.
-
-### CI - WIP
-
-We currently have the CI running on either [Travis](https://travis-ci.org/) or
-[Buildkite](http://buildkite.com/). We are working towards having a central
-repository for the CI so stay tuned for details on how we are testing the code.
 
 This section is under construction.
 
