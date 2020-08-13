@@ -82,11 +82,6 @@ These are the empty repositories that have PRs waiting to be merged.
 
 ### rust-vmm
 
-- [event-manager](https://github.com/rust-vmm/event-manager): abstractions
-  for implementing event based systems.
-- [linux-loader](https://github.com/rust-vmm/linux-loader): parser and loader
-  for vmlinux and bzImage images as well as some other helpers for kernel
-  commandline.
 - [vm-virtio](https://github.com/rust-vmm/vm-virtio/): virtio device trait and
   implementation for virtio primitives such as virtqueues and descriptor chain.
 
@@ -105,6 +100,11 @@ These are the empty repositories that have PRs waiting to be merged.
   virtual machine's memory.
 - [vmm-sys-util](https://github.com/rust-vmm/vmm-sys-util/): collection of
   modules providing helpers and utilities for building VMMs and hypervisors.
+- [event-manager](https://github.com/rust-vmm/event-manager): abstractions
+  for implementing event based systems.
+- [linux-loader](https://github.com/rust-vmm/linux-loader): parser and loader
+  for vmlinux and bzImage images as well as some other helpers for kernel
+  commandline.
 
 ## Development
 
