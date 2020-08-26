@@ -84,6 +84,10 @@ These are the empty repositories that have PRs waiting to be merged.
 
 - [vm-virtio](https://github.com/rust-vmm/vm-virtio/): virtio device trait and
   implementation for virtio primitives such as virtqueues and descriptor chain.
+- [vm-superio](https://github.com/rust-vmm/vm-superio): emulation for legacy
+  devices.
+- [vmm-reference](https://github.com/rust-vmm/vmm-reference): reference VMM
+  built solely with `rust-vmm` crates and minimal glue.
 
 #### crates.io
 
@@ -91,18 +95,18 @@ These are the empty repositories that have PRs waiting to be merged.
   to KVM generated using [bindgen](https://crates.io/crates/bindgen).
 - [kvm-ioctls](https://crates.io/crates/kvm-ioctls): Safe wrappers over the
   KVM API.
-- [vfio-bindings](https://github.com/rust-vmm/vfio-bindings): Rust FFI
+- [vfio-bindings](https://crates.io/crates/vfio-bindings): Rust FFI
   bindings for using the VFIO framework.
-- [virtio-bindings](https://github.com/rust-vmm/virtio-bindings): Rust FFI
+- [virtio-bindings](https://crates.io/crates/virtio-bindings): Rust FFI
   bindings to virtio kernel headers generated using
   [bindgen](https://crates.io/crates/bindgen).
-- [vm-memory](https://github.com/rust-vmm/vm-memory): abstractions over a
+- [vm-memory](https://crates.io/crates/vm-memory): abstractions over a
   virtual machine's memory.
-- [vmm-sys-util](https://github.com/rust-vmm/vmm-sys-util/): collection of
+- [vmm-sys-util](https://crates.io/crates/vmm-sys-util/): collection of
   modules providing helpers and utilities for building VMMs and hypervisors.
-- [event-manager](https://github.com/rust-vmm/event-manager): abstractions
+- [event-manager](https://crates.io/crates/event-manager): abstractions
   for implementing event based systems.
-- [linux-loader](https://github.com/rust-vmm/linux-loader): parser and loader
+- [linux-loader](https://crates.io/crates/linux-loader): parser and loader
   for vmlinux and bzImage images as well as some other helpers for kernel
   commandline.
 
@@ -169,6 +173,10 @@ list of requirements must be checked before having the first version published:
   For in-depth design details, a DESIGN.md file can be created.
 - **LICENSE**.
 - **CODEOWNERS**.
+- **Complete `Cargo.toml`**. Check the
+  [`cargo` reference](https://doc.rust-lang.org/cargo/reference/publishing.html#before-publishing-a-new-crate)
+  for the **requirements** that a crate must meet to be published to
+  [crates.io](https://crates.io).
 
 ### Contributing
 
