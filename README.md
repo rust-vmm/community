@@ -82,12 +82,14 @@ These are the empty repositories that have PRs waiting to be merged.
 
 ### rust-vmm
 
+- [vm-device](https://github.com/rust-vmm/vm-device): a virtual machine device
+  model crate.
 - [vm-virtio](https://github.com/rust-vmm/vm-virtio/): virtio device trait and
   implementation for virtio primitives such as virtqueues and descriptor chain.
-- [vm-superio](https://github.com/rust-vmm/vm-superio): emulation for legacy
-  devices.
 - [vmm-reference](https://github.com/rust-vmm/vmm-reference): reference VMM
   built solely with `rust-vmm` crates and minimal glue.
+- [vhost](https://github.com/rust-vmm/vhost): a crate to support vhost backend
+  drivers for virtio devices.
 
 #### crates.io
 
@@ -109,6 +111,8 @@ These are the empty repositories that have PRs waiting to be merged.
 - [linux-loader](https://crates.io/crates/linux-loader): parser and loader
   for vmlinux and bzImage images as well as some other helpers for kernel
   commandline.
+- [vm-superio](https://crates.io/crates/vm-superio): emulation for legacy
+  devices.
 
 ## Development
 
