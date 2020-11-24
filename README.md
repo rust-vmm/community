@@ -91,7 +91,7 @@ These are the empty repositories that have PRs waiting to be merged.
 - [vhost](https://github.com/rust-vmm/vhost): a crate to support vhost backend
   drivers for virtio devices.
 
-#### crates.io
+### crates.io
 
 - [kvm-bindings](https://crates.io/crates/kvm-bindings): Rust FFI bindings
   to KVM generated using [bindgen](https://crates.io/crates/bindgen).
