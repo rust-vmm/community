@@ -88,8 +88,6 @@ These are the empty repositories that have PRs waiting to be merged.
   implementation for virtio primitives such as virtqueues and descriptor chain.
 - [vmm-reference](https://github.com/rust-vmm/vmm-reference): reference VMM
   built solely with `rust-vmm` crates and minimal glue.
-- [vhost](https://github.com/rust-vmm/vhost): a crate to support vhost backend
-  drivers for virtio devices.
 
 ### crates.io
 
@@ -99,6 +97,8 @@ These are the empty repositories that have PRs waiting to be merged.
   KVM API.
 - [vfio-bindings](https://crates.io/crates/vfio-bindings): Rust FFI
   bindings for using the VFIO framework.
+- [vhost](https://github.com/rust-vmm/vhost): a crate to support vhost backend
+  drivers for virtio devices.
 - [virtio-bindings](https://crates.io/crates/virtio-bindings): Rust FFI
   bindings to virtio kernel headers generated using
   [bindgen](https://crates.io/crates/bindgen).
