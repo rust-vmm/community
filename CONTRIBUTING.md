@@ -6,7 +6,7 @@ Contributions to rust-vmm are welcome!
 
 ## Merging code in rust-vmm
 
-To contribute to rust-vmm, you needd to open a Pull Request (PR) against the
+To contribute to rust-vmm, you need to open a Pull Request (PR) against the
 master branch of the repositories. rust-vmm uses the
 [fork and pull development model](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-collaborative-development-models).
 
