@@ -30,7 +30,7 @@ also add the person requesting the crate as an Admin.
 ## Configure Repository
 
 This configuration is in line with the rust-vmm
-[contributing guidelines](https://github.com/rust-vmm/community/blob/master/CONTRIBUTING.md#merging-code-in-rust-vmm),
+[contributing guidelines](https://github.com/rust-vmm/community/blob/main/CONTRIBUTING.md#merging-code-in-rust-vmm),
 and it is necessary for ensuring that all rust-vmm crates keep the same quality
 standard.
 
