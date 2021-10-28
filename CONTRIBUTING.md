@@ -7,7 +7,7 @@ Contributions to rust-vmm are welcome!
 ## Merging code in rust-vmm
 
 To contribute to rust-vmm, you need to open a Pull Request (PR) against the
-master branch of the repositories. rust-vmm uses the
+main branch of the repositories. rust-vmm uses the
 [fork and pull development model](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-collaborative-development-models).
 
 We ask you to only open PRs from your fork branches. This helps us keep the
@@ -79,10 +79,10 @@ cd rust-vmm-ci
 OLD_COMMIT=`git rev-parse HEAD`
 ```
 
-3. Update rust-vmm-ci to the latest commit on master:
+3. Update rust-vmm-ci to the latest commit on main:
 
 ```bash
-git pull https://github.com/rust-vmm/rust-vmm-ci/ master
+git pull https://github.com/rust-vmm/rust-vmm-ci/ main
 ```
 
 4. Get the pretty print of commits (this helps us keep track of updates):
