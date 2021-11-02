@@ -19,6 +19,7 @@ whenever they pass all CI tests and have received at least 2 reviewer approvals.
 * [Chao Peng](https://github.com/chao-p)
 * [Jenny Mankin](https://github.com/jennymankin)
 * [Jiang Liu](https://github.com/jiangliu)
+* [Laura Loghin](https://github.com/lauralt)
 * [Paolo Bonzini](https://github.com/bonzini)
 * [Rob Bradford](https://github.com/rbradford)
 * [Samuel Ortiz](https://github.com/sameo)
