@@ -84,7 +84,13 @@ cargo publish
 9. If this is the first time you publish a release of that crate on crates.io
    don't forget to grant permissions to the rust-vmm gatekeepers team and all
    the code owners (as specified in the CODEOWNERS file of the repository being
-   published).
+   published). If you are a code owner, but not a gatekeeper, you won't be
+   able to add the gatekeepers team, only a member of that team is allowed to.
+   In this case, you have to ask a code owner who is also a gatekeeper to
+   grant this permission, and in case none of the code owners is a gatekeeper,
+   you will have to add as an owner a gatekeeper as well (with the second
+   command provided below). That gatekeeper can then add the gatekeepers team
+   as an owner.
 
 ```bash
 cargo owner --add github:rust-vmm:gatekeepers
@@ -129,7 +135,7 @@ on crates from the same workspace. For example, the `virtio-device` crate
 depends on `virtio-queue`, so `virtio-queue` has to be published first. It is
 not allowed to publish a crate that has a `path` dependency, more details
 [here](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html#multiple-locations).
-After the dependency crates are released, the version of these crates have to
+After the dependency crates are released, the version of these crates has to
 be updated in the `Cargo.toml` files of the crates that depend on them.
 So for the particular example, after you release `virtio-queue` with 0.x.0
 version, you have to update this dependency in the `Cargo.toml` of
