@@ -82,37 +82,56 @@ These are the empty repositories that have PRs waiting to be merged.
 
 ### rust-vmm
 
-- [vm-device](https://github.com/rust-vmm/vm-device): a virtual machine device
-  model crate.
-- [vm-virtio](https://github.com/rust-vmm/vm-virtio/): virtio device trait and
-  implementation for virtio primitives such as virtqueues and descriptor chain.
+- [mshv](https://github.com/rust-vmm/mshv): workspace for Microsoft Hypervisor
+  safe wrappers.
+- [vm-allocator](https://github.com/rust-vmm/vm-allocator): abstractions for
+  allocating resources needed by the VMM while running (such as GSI numbers,
+  MMIO ranges).
+- [vm-virtio](https://github.com/rust-vmm/vm-virtio): workspace for virtio
+  devices and related helpers.
 - [vmm-reference](https://github.com/rust-vmm/vmm-reference): reference VMM
   built solely with `rust-vmm` crates and minimal glue.
+- [vhost-device](https://github.com/rust-vmm/vhost-device): A workspace for
+  devices implemented using the
+  [vhost-user-backend](https://github.com/rust-vmm/vhost-user-backend).
 
 ### crates.io
 
+- [event-manager](https://crates.io/crates/event-manager): abstractions
+  for implementing event based systems.
 - [kvm-bindings](https://crates.io/crates/kvm-bindings): Rust FFI bindings
   to KVM generated using [bindgen](https://crates.io/crates/bindgen).
 - [kvm-ioctls](https://crates.io/crates/kvm-ioctls): Safe wrappers over the
   KVM API.
-- [vfio-bindings](https://crates.io/crates/vfio-bindings): Rust FFI
-  bindings for using the VFIO framework.
-- [vhost](https://github.com/rust-vmm/vhost): a crate to support vhost backend
-  drivers for virtio devices.
-- [virtio-bindings](https://crates.io/crates/virtio-bindings): Rust FFI
-  bindings to virtio kernel headers generated using
-  [bindgen](https://crates.io/crates/bindgen).
-- [vm-memory](https://crates.io/crates/vm-memory): abstractions over a
-  virtual machine's memory.
-- [vmm-sys-util](https://crates.io/crates/vmm-sys-util/): collection of
-  modules providing helpers and utilities for building VMMs and hypervisors.
-- [event-manager](https://crates.io/crates/event-manager): abstractions
-  for implementing event based systems.
 - [linux-loader](https://crates.io/crates/linux-loader): parser and loader
   for vmlinux and bzImage images as well as some other helpers for kernel
   commandline.
+- [seccompiler](https://crates.io/crates/seccompiler): Linux seccomp-bpf
+  jailing utilities.
+- [vfio-bindings](https://crates.io/crates/vfio-bindings):
+  Rust FFI bindings for using the VFIO framework.
+- [vfio-ioctls](https://crates.io/crates/vfio-ioctls):
+  safe wrappers over the VFIO framework.
+- [vhost](https://crates.io/crates/vhost): a crate to support vhost backend
+  drivers for virtio devices.
+- [vhost-user-backend](https://crates.io/crates/vhost-user-backend): provides
+  a framework to implement vhost-user backend services
+- [virtio-bindings](https://crates.io/crates/virtio-bindings): Rust FFI
+  bindings to virtio kernel headers generated using
+  [bindgen](https://crates.io/crates/bindgen).
+- [virtio-queue](https://crates.io/crates/virtio-queue):
+  virtio queue implementation.
+- [vm-device](https://crates.io/crates/vm-device): a virtual machine device
+  model crate.
+- [vm-fdt](https://crates.io/crates/vm-fdt): a Flattened Device Tree writer.
+- [vm-memory](https://crates.io/crates/vm-memory): abstractions over a
+  virtual machine's memory.
 - [vm-superio](https://crates.io/crates/vm-superio): emulation for legacy
   devices.
+- [vm-superio-ser](https://crates.io/crates/vm-superio-ser): provides version
+  aware serialization for the emulated devices in vm-superio.
+- [vmm-sys-util](https://crates.io/crates/vmm-sys-util/): collection of
+  modules providing helpers and utilities for building VMMs and hypervisors.
 
 ## Development
 
