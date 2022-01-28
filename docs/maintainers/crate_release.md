@@ -7,7 +7,7 @@
 
 ## Prerequisites
 
-Releases can be created by all [rust-vmm maintainers](../../GATEKEEPERS.md),
+Releases can be created by all [rust-vmm maintainers](../../MAINTAINERS.md),
 and the code owners of each repository.
 
 ## Regular Release
