@@ -207,6 +207,12 @@ All the rust-vmm repositories accept contributions by a
 [GitHub Pull Request (PR)](https://help.github.com/articles/using-pull-requests/).
 For more details, please check the [contributing document](CONTRIBUTING.md).
 
+For other processes (like setting up repos), please check the
+[extended documentation](docs).
+
+If you want to become a rust-vmm maintainer, or you're curious about the role,
+please check the documentation available in [`MAINTAINERS.md`](MAINTAINERS.md).
+
 ### CI
 
 We ensure that all rust-vmm components keep the same quality bar by using the
