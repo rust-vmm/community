@@ -37,16 +37,16 @@ PR reviewers are selected as follows:
 - If the repository has a `CODEOWNERS` file, both reviewers are randomly picked
   from there.
 - If the repository does not have explicit code owners, both reviewers are
-  chosen from the rust-vmm [gatekeepers](GATEKEEPERS.md) list.
+  chosen from the rust-vmm [gatekeepers](MAINTAINERS.md#gatekeepers) list.
 
 Sometimes a selected reviewer does not have the available bandwidth, time or
 expertise to do a proper review. In such cases a new reviewer must be assigned
-from either the repository code owners list or the rust-vmm gate keepers list.
+from either the repository code owners list or the rust-vmm gatekeepers list.
 It is up to the initially assigned reviewer, or one of the rust-vmm gatekeepers
 if the former is not available, to find the new reviewer.
 
-It is important to note that anyone outside of the repository code owners or
-the rust-vmm gate keepers lists is very welcome to review any pending PR.
+It is important to note that anyone outside the repository code owners or
+the rust-vmm gatekeepers lists is very welcome to review any pending PR.
 However, any resulting PR approval from an external reviewer will not count as
 one of the 2 mandatory approvals for the PR to be merged.
 
