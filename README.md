@@ -184,7 +184,7 @@ list of requirements must be checked before having the first version published:
   rule is enforceable by using `#![deny(missing-docs)]` in `src/lib.rs`.
 - **Unit Tests**.
 - **Coverage**. We expect all crates to have coverage tests that don't allow
-  the coverage to drop on new PRs.
+  the coverage to drop on new PRs. See [the coverage docs](docs/maintainers/code_coverage.md) for more details.
 - **Build Time Tests**. All components will eventually be tested using the
   same common [Buildkite pipeline](https://buildkite.com/docs/pipelines). This
   is still WIP. The tests include style checks and other lint checks, a
