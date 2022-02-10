@@ -15,7 +15,7 @@ Cloud Base, Crowdstrike, Intel, Google, Red Hat as well as individual
 contributors.
 
 Each virtualization component lives in a separate GitHub repository under the
-rust-vmm organization. One repository corresponds to one
+rust-vmm organization. One repository corresponds usually to one
 [Rust crate](https://doc.rust-lang.org/stable/book/ch07-01-packages-and-crates.html).
 
 ## Why rust-vmm?
