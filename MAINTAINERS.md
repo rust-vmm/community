@@ -54,6 +54,10 @@ admin permissions to the repository following the
 [GitHub guide](https://docs.github.com/en/enterprise-server@3.0/organizations/managing-access-to-your-organizations-repositories/adding-outside-collaborators-to-repositories-in-your-organization#adding-outside-collaborators-to-a-repository).
 Note that maintainers can also be granted Admin rights, if they need
 permissions to update the repository settings (such as adding a member).
+4. Repository Maintainers are responsible for creating releases. For crates
+that are published to crates.io the release process includes publishing a new
+version. Ask one of the maintainers to give you permissions for the crate
+on crates.io.
 
 ## The Gatekeeper Role
 
