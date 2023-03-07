@@ -233,23 +233,40 @@ list of requirements must be checked before having the first version published:
   don't go out of sync with the code. To make sure we don't miss anything this
   rule is enforceable by using `#![deny(missing-docs)]` in `src/lib.rs`.
 - **Unit Tests**.
-- **Coverage**. We expect all crates to have coverage tests that don't allow
-  the coverage to drop on new PRs. See [the coverage docs](docs/maintainers/code_coverage.md) for more details.
-- **Build Time Tests**. All components will eventually be tested using the
-  same common [Buildkite pipeline](https://buildkite.com/docs/pipelines). This
-  is still WIP. The tests include style checks and other lint checks, a
-  coverage test, builds with various configurations and on different
-  architectures and operating systems.
+- **Coverage**. We expect all crates to enable a coverage test that doesn't
+  allow the coverage to drop on new PRs. See
+  [the coverage docs](docs/maintainers/code_coverage.md) for more details. For
+  most of the crates in rust-vmm we keep the coverage to above 80% before
+  publishing them on crates.io. This coverage target can be slightly adjusted
+  in rare cases, and depending on the use case.
+- **Build Time Tests**. All components must have a running CI that includes
+  checks for style, linters, build, coverage, and in some cases benchmarks and
+  fuzzing sessions. These tests are running with various feature configurations,
+  and on different architecture and operating systems. In their majority, the
+  rust-vmm components are tested using the
+  [rust-vmm-ci](https://github.com/rust-vmm/rust-vmm-ci), running on
+  Buildkite. This makes sure that the same quality bar is kept across the
+  rust-vmm project. When using Buildkite and rust-vmm-ci is not feasible, the
+  same tests should be recreated using different CI providers.
 - **README.md**. The readme contains high-level information about the crate.
   The readme is the front page of the package on crates.io so ideally it also
   has minimal examples on how to use the crate.
   For in-depth design details, a DESIGN.md file can be created.
-- **LICENSE**.
-- **CODEOWNERS**.
+- **LICENSE**. The suggested license for the rust-vmm crates is Apache 2.0 OR
+  BSD-3-Clause as this is a permissive license which allows various projects
+  to consume the crates.
+- **CODEOWNERS**. This file provides transparency in terms of whom the
+  maintainers of the various crates are. By default, the @rust-vmm/gatekeepers
+  are maintainers for all rust-vmm crates, but this should be used as an
+  exceptional situation rather than the norm.
 - **Complete `Cargo.toml`**. Check the
   [`cargo` reference](https://doc.rust-lang.org/cargo/reference/publishing.html#before-publishing-a-new-crate)
   for the **requirements** that a crate must meet to be published to
   [crates.io](https://crates.io).
+- **Unsafe Code**. Go over the code and make sure you are limiting the usage
+  of unsafe code. Unsafe code blocks should be limited to the code that is
+  unsafe. When the unsafe functions also have safe equivalents, these should be
+  used instead.
 
 ### CI
 
