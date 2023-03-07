@@ -1,4 +1,19 @@
-# Community
+# The rust-vmm Community
+
+This repository provides an overview of the rust-vmm project, its crates,
+guiding principles, and the development model.
+
+## Table of Contents
+- [What is rust-vmm?](#what-is-rust-vmm)
+- [Why rust-vmm?](#why-rust-vmm)
+- [The rust-vmm Components](#the-rust-vmm-components)
+- [Development](#development)
+  - [Maintainers and Gatekeepers](#maintainers-and-gatekeepers)
+  - [Community Channels](#community-channels)
+  - [Contributing Guidelines](#contributing-guidelines)
+  - [Adding a New Virtualization Component](#adding-a-new-virtualization-component)
+  - [Publishing on crates.io - Requirements List](#publishing-on-cratesio---requirements-list)
+  - [CI](#ci)
 
 ## What Is rust-vmm?
 
@@ -51,7 +66,7 @@ rust-vmm organization. One repository corresponds usually to one
   reviews up to the point we are confident the interface is clean and reusable
   by other projects.
 
-## Status of rust-vmm Components
+## The rust-vmm components
 
 Each rust-vmm crate lives in its own repository. Depending on where the
 latest crate code is, the crate can be in one of 3 states:
@@ -135,14 +150,31 @@ These are the empty repositories that have PRs waiting to be merged.
 
 ## Development
 
-### Join Us
+### Maintainers and Gatekeepers
 
-You can join our community on any of the following places:
+The rust-vmm project is maintained by repository maintainers and gatekeepers. More details about
+their responsibilities are available in the [Maintainers Docs](MAINTAINERS.md).
+
+### Community Channels
+
+You can join our community discussions on any of the following places:
 
 * Join our
   [mailing list](http://lists.opendev.org/cgi-bin/mailman/listinfo/rust-vmm).
 * Join our
   [Slack channel](https://join.slack.com/t/rust-vmm/shared_invite/enQtODAxMzA2ODIyMTc2LWRhYjIwZmQ0YzUxODJlMTRhZWU2ZDBjYmJiNzBmOWVmYjg4MjY5YWRjYjM0YzQ5YzgyMTBmYzNlMjMzYmZlODU).
+
+### Contributing Guidelines
+
+All the rust-vmm repositories accept contributions by a
+[GitHub Pull Request (PR)](https://help.github.com/articles/using-pull-requests/).
+For more details, please check the [contributing document](CONTRIBUTING.md).
+
+For other processes (like setting up repos), please check the
+[extended documentation](docs).
+
+If you want to become a rust-vmm maintainer, or you're curious about the role,
+please check the documentation available in [`MAINTAINERS.md`](MAINTAINERS.md).
 
 ### Adding a New Virtualization Component
 
@@ -201,18 +233,6 @@ list of requirements must be checked before having the first version published:
   for the **requirements** that a crate must meet to be published to
   [crates.io](https://crates.io).
 
-### Contributing
-
-All the rust-vmm repositories accept contributions by a
-[GitHub Pull Request (PR)](https://help.github.com/articles/using-pull-requests/).
-For more details, please check the [contributing document](CONTRIBUTING.md).
-
-For other processes (like setting up repos), please check the
-[extended documentation](docs).
-
-If you want to become a rust-vmm maintainer, or you're curious about the role,
-please check the documentation available in [`MAINTAINERS.md`](MAINTAINERS.md).
-
 ### CI
 
 We ensure that all rust-vmm components keep the same quality bar by using the
@@ -220,11 +240,3 @@ We ensure that all rust-vmm components keep the same quality bar by using the
 built on top of [Buildkite](http://buildkite.com/), and added as a submodule
 to all rust-vmm repositories. For more details, please check the [rust-vmm-ci
 README](https://github.com/rust-vmm/rust-vmm-ci/).
-
-### Versioning Crates - WIP
-
-This section is under construction.
-
-### Fuzz Testing - WIP
-
-This section is under construction.
