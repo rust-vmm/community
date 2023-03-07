@@ -6,6 +6,10 @@ In rust-vmm we have two types of maintainers:
 - repository maintainer, that have admin permissions and are responsible for
   the health of one or more rust-vmm repositories.
 
+Note that we do not have a process for removing maintainers and gatekeepers.
+This means that not all the people mentioned in this document might still be
+active in the project.
+
 ## Repository Maintainer
 
 As a repository maintainer you have the following responsibilities:
@@ -26,6 +30,15 @@ The repository maintainers are mentioned in the `CODEOWNERS` file of all
 rust-vmm repositories.
 
 ### Becoming a Repository Maintainer
+
+As the project is evolving we are looking to add repository maintainers. We
+encourage people to first ramp up on the repositories by going through the
+documentation, looking at issues, review and submit pull requests. Even though
+you initially do not have write permissions for the repository, reviews are a
+great way to get familiar with the code.
+
+Once you feel confident about the code in the repository, you can become a
+maintainer using the following guidelines:
 
 1. To be a code owner, open a PR in the target repository, edit the `CODEOWNERS`
 file and add your GitHub handle there. In case you want to add someone else as
@@ -52,6 +65,12 @@ For that purpose, gatekeepers may get assigned as PR reviewers when a rust-vmm
 repository is lacking code owners, or when a previously assigned reviewer is not
 able to review a pending PR.
 
+Since we started the rust-vmm project the gatekeeper role has not been extended
+to new users (with a single exception). Having a global overview of the project
+when there are 20+ crates is not a feasible task. This is the reason why we are
+instead encouraging people to
+[become repository maintainers instead](#becoming-a-repository-maintainer).
+
 ### Gatekeepers
 
 * [Alexandra Iordache](https://github.com/aghecenco)
@@ -66,7 +85,3 @@ able to review a pending PR.
 * [Samuel Ortiz](https://github.com/sameo)
 * [Sebastien Boeuf](https://github.com/sboeuf)
 * [Zach Reizner](https://github.com/zachreizner)
-
-### Becoming a Gatekeeper
-
-Process documentation in progress.
