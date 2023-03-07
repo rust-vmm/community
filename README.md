@@ -35,7 +35,7 @@ rust-vmm organization. One repository corresponds usually to one
 
 ## Why rust-vmm?
 
-- **Reduce code duplication**. The initial thought with rust-vmm was to create
+- **Reduce code duplication**. The initial idea behind rust-vmm was to create
   a place for sharing common virtualization components between two existing
   VMMs written in Rust:
   [CrosVM](https://chromium.googlesource.com/chromiumos/platform/crosvm/) and
@@ -43,28 +43,31 @@ rust-vmm organization. One repository corresponds usually to one
   two projects have similar code for calling KVM ioctls, managing the
   virtual machine memory, interacting with virtio devices and others. Instead
   of having these components live in each of the projects repositories, they
-  can be shared through the rust-vmm project.
+  can be shared through the rust-vmm project. Since the beginning of the
+  project, other initiatives have enabled expanding the scope of the project
+  to accommodate the needs of other hypervisors (Xen and Hyper-v), and
+  various open source projects such as
+  [Cloud Hypervisor](https://github.com/cloud-hypervisor/cloud-hypervisor),
+  and the [Qemu virtiofsd implementation](https://gitlab.com/virtio-fs/virtiofsd).
 - **Faster development**. rust-vmm provides a base of virtualization components
-  which are meant to be generic such that they can be consumed by other
-  projects besides CrosVM and Firecracker. One example that is often mentioned
-  is building a container specific VMM. By doing so, the container VMM can
-  reuse most of the rust-vmm components and simply build the glue around them
-  as well as an appropriate API for interacting with the container.
-- **Security & Testability**. Having independent components makes fuzz testing
-  easy to apply to each individual package. Our top priority is now
-  [vm-virtio](https://github.com/rust-vmm/vm-virtio) as it provides a
-  [virtio](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=virtio)
-  device implementation. We want to keep a high standard in terms of testing
-  as these virtualization packages are going to be used in production by
-  multiple projects. Each component is individually tested with a set of
-  common build time tests responsible for running unit tests and linters
-  (including coding style checks), and computing the coverage. In the future
-  we are planning to test the integration of the rust-vmm components by
-  providing a reference VMM implementation.
-- **Clean interface**. As crates are shared between multiple VMMs, the interface has to be
-  flexible enough to be used by multiple VMMs. There are a few rounds of design
-  reviews up to the point we are confident the interface is clean and reusable
-  by other projects.
+  which are meant to be generic such that they can be consumed by multiple
+  projects. The project aims to allow building custom virtualization solutions
+  by reusing the rust-vmm components. On top of these components, a custom
+  solution should only need to care about its specialized component, an API
+  and the glue code that provides the interactions between them.
+- **Security & Testability**. One of the most salient feature of rust-vmm is
+  its high quality components. We want to keep a high quality standard
+  as these virtualization packages are used in production by multiple projects.
+  Each component is individually tested with a set of common build time tests
+  responsible for running unit tests, linters (including coding style
+  checks), and computing the coverage. For critical components that handle
+  untrusted input we also run fuzzing
+  (i.e in [vm-virtio](https://github.com/rust-vmm/vm-virtio)), and provide a
+  [threat model documentation](https://github.com/rust-vmm/vm-superio#threat-model)
+  that customers can use to improve the security of their solutions.
+- **Clean interface**. As crates are shared between multiple VMMs, the reviews
+  for interface changes will typically go through a few rounds of reviews to
+  make sure they are flexible enough to be used by multiple products.
 
 ## The rust-vmm components
 
