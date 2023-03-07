@@ -71,8 +71,23 @@ rust-vmm organization. One repository corresponds usually to one
 
 ## The rust-vmm components
 
-Each rust-vmm crate lives in its own repository. Depending on where the
-latest crate code is, the crate can be in one of 3 states:
+When we first started the rust-vmm project each of the crate was living in
+its own repository. As the number of crates grew quickly, we reverted this
+decision, and started having related crates as part of a single workspace. Now,
+we have one workspace per repository. For example, the vm-virtio repository
+accommodates multiple crates including virtio-queue, and different virtio
+device implementations. The reasoning behind having multiple crates in a
+single repository comes from the maintenance cost of repositories. To give an
+example, whenever we update the rust-vmm-ci,
+[Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/)
+will open a PR in each rust-vmm repository to update to the latest version.
+While in most cases the reviews are trivial as very few changes are required,
+you still need to go through a long list of PRs that need to be approved. In
+rare cases when changes to the infrastructure impact the CI, propagating them
+to individual repositories quickly adds up. You need to clone the repository,
+create a branch, provide the update, follow up on the PRs, and so on.
+
+A rust-vmm crate can have one of the following states:
 
 1. `empty`: The crate repo exists but there is no code there yet. This
    means the crate was created after a community acknowledgement about its
