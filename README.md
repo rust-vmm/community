@@ -14,6 +14,7 @@ guiding principles, and the development model.
   - [Adding a New Virtualization Component](#adding-a-new-virtualization-component)
   - [Publishing on crates.io - Requirements List](#publishing-on-cratesio---requirements-list)
   - [CI](#ci)
+  - [Extended Development Documentation](#extended-development-documentation)
 
 ## What Is rust-vmm?
 
@@ -239,7 +240,7 @@ list of requirements must be checked before having the first version published:
 - **Unit Tests**.
 - **Coverage**. We expect all crates to enable a coverage test that doesn't
   allow the coverage to drop on new PRs. See
-  [the coverage docs](docs/maintainers/code_coverage.md) for more details. For
+  [the coverage docs](docs/code_coverage.md) for more details. For
   most of the crates in rust-vmm we keep the coverage to above 80% before
   publishing them on crates.io. This coverage target can be slightly adjusted
   in rare cases, and depending on the use case.
@@ -279,3 +280,8 @@ We ensure that all rust-vmm components keep the same quality bar by using the
 built on top of [Buildkite](http://buildkite.com/), and added as a submodule
 to all rust-vmm repositories. For more details, please check the [rust-vmm-ci
 README](https://github.com/rust-vmm/rust-vmm-ci/).
+
+### Extended Development Documentation
+
+For more details about certain aspects of developing in rust-vmm, please check
+the [extended development documentation](docs/readme.md).
