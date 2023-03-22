@@ -49,9 +49,10 @@ rust-vmm organization. One repository corresponds usually to one
   [Xen](https://github.com/rust-vmm/xen-sys) and
   [Hyper-v](https://github.com/rust-vmm/mshv) hypervisor by way of bindings
   and low level access libraries.  Other open source projects such as
-  [Cloud Hypervisor](https://github.com/cloud-hypervisor/cloud-hypervisor) and
+  [Cloud Hypervisor](https://github.com/cloud-hypervisor/cloud-hypervisor),
   the [Qemu virtiofsd implementation](https://gitlab.com/virtio-fs/virtiofsd)
-  have also been integrated.
+  and [vhost-device](https://github.com/rust-vmm/vhost-device) have also been
+  integrated.
 - **Faster development**. rust-vmm provides a base of virtualization components
   which are meant to be generic such that they can be consumed by multiple
   projects. The project aims to allow building custom virtualization solutions
