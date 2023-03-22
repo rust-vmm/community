@@ -26,7 +26,7 @@ devices and other VMM libraries.
 
 The rust-vmm project is organized as a shared effort, shared ownership
 open-source project that includes (so far) contributors from Alibaba, AWS,
-Cloud Base, Crowdstrike, Intel, Google, Red Hat as well as individual
+Cloud Base, Crowdstrike, Intel, Google, Linaro, Red Hat as well as individual
 contributors.
 
 Each virtualization component lives in a separate GitHub repository under the
