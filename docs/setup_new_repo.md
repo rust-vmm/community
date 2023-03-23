@@ -79,7 +79,7 @@ To set up the CI, you need to:
    *Commands to run* write the following command:
 
 ```bash
-   buildkite-agent pipeline upload rust-vmm-ci/.buildkite/pipeline.yml
+./rust-vmm-ci/.buildkite/autogenerate_pipeline.py | buildkite-agent pipeline upload
 ```
 
 4. Under *Teams*, give access to the `rust-vmm-dev` team to the pipeline and
