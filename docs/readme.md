@@ -8,3 +8,4 @@ of development in the rust-vmm project.
 - [Crate Release](crate_release.md)
 - [Set Up a New Repository](setup_new_repo.md)
 - [Update the Rust Toolchain](update-rust-toolchain.md)
+- [Update rust-vmm-ci](update-rust-vmm-ci.md)

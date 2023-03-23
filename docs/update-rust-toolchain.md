@@ -26,4 +26,5 @@ updating the rust-vmm-ci submodule.
 3. Update the rust-vmm-ci for the target rust-vmm repository. NOTE: the
 rust-vmm-ci submodule is automatically updated using Dependabot
 every week. If for any reason you need this update faster than the default
-schedule, you can follow the runbook for manually updating rust-vmm-ci.
+schedule, you can follow the runbook for manually
+[updating rust-vmm-ci](update-rust-vmm-ci.md).
