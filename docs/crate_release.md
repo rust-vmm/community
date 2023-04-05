@@ -95,7 +95,7 @@ Fixed
    example, the upstream remote points to the original repository (not your
    fork).
 
-8. Create as GitHub release. Go to the Releases page in the crate's repository
+8. Create a GitHub release. Go to the Releases page in the crate's repository
    and click Draft a new release (button on the right). In Tag version, pick
    the newly pushed tag. In Release title, write the tag name including v
    (example: vm-awesome-v1.2.3). The description should be the new version's 
