@@ -7,7 +7,7 @@
 
 Code coverage is important for ensuring our integrated testing covers
 the functionally of the code. The common project CI is set to reject
-pull requests which cause the overall code coverage to fall. Therefor
+pull requests which cause the overall code coverage to fall. Therefore
 it is important that any new functionality comes with tests to
 exercise it.
 
