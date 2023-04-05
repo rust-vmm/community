@@ -120,11 +120,10 @@ These are the empty repositories that have PRs waiting to be merged.
 
 ### rust-vmm
 
+- [acpi\_tables](https://github.com/rust-vmm/acpi_tables): code for generating
+  ACPI tables.
 - [mshv](https://github.com/rust-vmm/mshv): workspace for Microsoft Hypervisor
   safe wrappers.
-- [vm-allocator](https://github.com/rust-vmm/vm-allocator): abstractions for
-  allocating resources needed by the VMM while running (such as GSI numbers,
-  MMIO ranges).
 - [vm-virtio](https://github.com/rust-vmm/vm-virtio): workspace for virtio
   devices and related helpers.
 - [vmm-reference](https://github.com/rust-vmm/vmm-reference): reference VMM
@@ -133,7 +132,7 @@ These are the empty repositories that have PRs waiting to be merged.
   devices implemented using the
   [vhost-user-backend](https://github.com/rust-vmm/vhost-user-backend).
 
-### crates.io
+### [crates.io](https://crates.io/teams/github:rust-vmm:gatekeepers)
 
 - [event-manager](https://crates.io/crates/event-manager): abstractions
   for implementing event based systems.
@@ -159,6 +158,13 @@ These are the empty repositories that have PRs waiting to be merged.
   [bindgen](https://crates.io/crates/bindgen).
 - [virtio-queue](https://crates.io/crates/virtio-queue):
   virtio queue implementation.
+- [virtio-queue-ser](https://crates.io/crates/virtio-queue-ser):
+  version aware serialization support for virtio-queue.
+- [virtio-vsock](https://crates.io/crates/virtio-vsock): virtio vsock device
+  implementation.
+- [vm-allocator](https://crates.io/crates/vm-allocator): abstractions for
+  allocating resources needed by the VMM while running (such as GSI numbers,
+  MMIO ranges).
 - [vm-device](https://crates.io/crates/vm-device): a virtual machine device
   model crate.
 - [vm-fdt](https://crates.io/crates/vm-fdt): a Flattened Device Tree writer.
@@ -227,7 +233,7 @@ list of requirements must be checked before having the first version published:
   to `src/lib.rs` and it will end up being the home page of the crate on
   [docs.rs](https://docs.rs/). Include information about what this crate does,
   how can it be used in other projects, as well as usage examples. Check out
-  the [kvm-ioctls docs](https://docs.rs/kvm-ioctls/0.1.0/kvm_ioctls/) for an
+  the [kvm-ioctls docs](https://docs.rs/kvm-ioctls/latest/kvm_ioctls/) for an
   example.
 - **Documentation for the public interface**. Everything belonging to the
   public interface of the crate must be properly documented. Where applicable,
