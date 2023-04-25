@@ -13,6 +13,11 @@ main branch of the repositories. rust-vmm uses the
 We ask you to only open PRs from your fork branches. This helps us keep the
 rust-vmm repositories clean, and not clutter them with PR branches.
 
+### Developer Certificate of Origin
+
+Please sign-off your commits in order to agree to the
+[Developer Certificate of Origin](https://developercertificate.org/).
+
 ### PR workflow
 
 After a PR is submitted against one of the rust-vmm repositories, it will be
