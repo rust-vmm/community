@@ -11,12 +11,14 @@ We ask anyone who discovers a security concern associated with any of the
 rust-vmm components to send an encrypted email to the rust-vmm maintainers,
 using the public PGP keys located below.
 
-|Maintainer	|Email	|PGP Key	|
-|---	|---	|---	|
-|Andreea Florescu |fandree@amazon.com |https://github.com/andreeaflorescu.gpg |
-|Laura Loghin |lauralg@amazon.com	|https://github.com/lauralt.gpg	|
-|Rob Bradford |robert.bradford@intel.com |https://github.com/rbradford.gpg |
-|Sebastien Boeuf |sebastien.boeuf@intel.com |https://github.com/sboeuf.gpg |
+|Maintainer|Email|PGP Key|
+|---|---|---|
+|Patrick Roy|roypat@amazon.co.uk|https://github.com/roypat.gpg|
+|Jonathan Woollett-Light|jcawl@amazon.co.uk|https://github.com/JonathanWoollett-Light.gpg|
+|Andreea Florescu|fandree@amazon.com|https://github.com/andreeaflorescu.gpg|
+|Laura Loghin|lauralg@amazon.com|https://github.com/lauralt.gpg|
+|Rob Bradford|rbradford@rivosinc.com|https://github.com/rbradford.gpg|
+|Sebastien Boeuf|seb@rivosinc.com|https://github.com/sboeuf.gpg|
 
 
 Along with your notification email, please provide any supporting material
