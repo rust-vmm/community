@@ -91,9 +91,9 @@ Fixed
 - Fixed #42, the worst bug ever.
 ```
 
-7. Push the tag to the upstream repository: `git push upstream --tags`. In this
-   example, the upstream remote points to the original repository (not your
-   fork).
+7. Push the tag to the upstream repository: `git push upstream vm-awesome-v1.2.0`.
+   In this example, the upstream remote points to the original repository
+   (not your fork).
 
 8. Create a GitHub release. Go to the Releases page in the crate's repository
    and click Draft a new release (button on the right). In Tag version, pick
