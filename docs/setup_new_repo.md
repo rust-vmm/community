@@ -101,3 +101,27 @@ Below you can see a configuration example:
         - Enable "Build pull requests from third-party forked repositories"
         - Update commit statuses -> Show blocked builds in GitHub as -> Pending
         - Don't forget to click on "Save GitHub Settings"
+
+### Staging workspace
+
+Sometimes a repository might find it easier to bring in new code by
+use of a staging area. This can allow the same workflow for reviewing
+and discussion of the code without having to meet all the requirements
+of the production crates. A staging area should not become permanent
+dumping ground, eventually all code should either be moved into
+production or removed from the repository.
+
+The staging area should have its own README.md describing the contents
+and what criteria need to be met for code to be included.
+
+Building staging code should be an explicit operation, the default
+`cargo build` should only build production crates.
+
+While enabling CI for staging is encouraged so that tests can be
+developed it should be split from the production testing. Code
+proposed for staging should still not fail any part of CI but there
+might be acceptable exceptions to DCO and commit format requirements
+to allow the importing of messy early history as is. The staging area
+may choose to relax the requirements on keeping code coverage on the
+understanding code will eventually have to meet those requirements to
+be promoted to production.
