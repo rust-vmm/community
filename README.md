@@ -39,7 +39,7 @@ rust-vmm organization. One repository corresponds usually to one
 - **Reduce code duplication**. The initial idea behind rust-vmm was to create
   a place for sharing common virtualization components between two existing
   VMMs written in Rust:
-  [CrosVM](https://chromium.googlesource.com/chromiumos/platform/crosvm/) and
+  [CrosVM](https://github.com/google/crosvm) and
   [Firecracker](https://github.com/firecracker-microvm/firecracker/). These
   two projects have similar code for calling KVM ioctls, managing the
   virtual machine memory, interacting with virtio devices and others. Instead
