@@ -58,12 +58,14 @@ The rust-vmm components are tested using the
 
 Setting up the CI can only be done by the rust-vmm Buildkite account
 administrators:
-- [Alexandru Agache](https://github.com/alexandruag)
 - [Alexandra Iordache](https://github.com/aghecenco)
+- [Alex Bennée](https://github.com/stsquad)
 - [Andreea Florescu](https://github.com/andreeaflorescu)
-- [Laura Loghin](https://github.com/lauralt)
-- [Samuel Ortiz](https://github.com/sameo)
-- [Sebastien Boeuf](https://github.com/sboeuf)
+- [Jonathan Woollett-Light](https://github.com/JonathanWoollett-Light)
+- [Mathew Poirier](https://github.com/mathieupoirier)
+- [Muminul Islam](https://github.com/russell-islam)
+- [Patrick Roy](https://github.com/roypat)
+- [Stefano Garzarella](https://github.com/stefano-garzarella)
 
 To set up the CI, you need to:
 
