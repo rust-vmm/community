@@ -61,31 +61,35 @@ on crates.io.
 
 ## The Gatekeeper Role
 
-Together with repository code owners, the gatekeepers team's main role is to
-manage rust-vmm contributions. In particular, gatekeepers will make sure that
-PRs get addressed, reviewed and eventually merged in a reasonable time frame.
+The wider organization is managed by a team
+[gatekeepers](https://github.com/orgs/rust-vmm/teams/gatekeepers) 🔒,
+which is viewable only by rust-vmm organization members.  For those
+outside the organization a snapshot of the membership is available below.
 
-For that purpose, gatekeepers may get assigned as PR reviewers when a rust-vmm
+Gatekeepers may get assigned as PR reviewers when a rust-vmm
 repository is lacking code owners, or when a previously assigned reviewer is not
 able to review a pending PR.
 
-Since we started the rust-vmm project the gatekeeper role has not been extended
-to new users (with a single exception). Having a global overview of the project
-when there are 20+ crates is not a feasible task. This is the reason why we are
-instead encouraging people to
-[become repository maintainers instead](#becoming-a-repository-maintainer).
+If you want to adopt repsonsibility to help with the project, it is preferable
+to
+[become a repository maintainers instead](#becoming-a-repository-maintainer).
 
-### Gatekeepers
+### List of Gatekeepers[^1]
 
-* [Alexandra Iordache](https://github.com/aghecenco)
-* [Alexandru Agache](https://github.com/alexandruag)
-* [Andreea Florescu](https://github.com/andreeaflorescu)
-* [Chao Peng](https://github.com/chao-p)
-* [Jenny Mankin](https://github.com/jennymankin)
-* [Jiang Liu](https://github.com/jiangliu)
-* [Laura Loghin](https://github.com/lauralt)
-* [Paolo Bonzini](https://github.com/bonzini)
-* [Rob Bradford](https://github.com/rbradford)
-* [Samuel Ortiz](https://github.com/sameo)
-* [Sebastien Boeuf](https://github.com/sboeuf)
-* [Zach Reizner](https://github.com/zachreizner)
+- [Alexandra Iordache](https://github.com/aghecenco)
+- [Alexandru Agache](https://github.com/alexandruag)
+- [Andreea Florescu](https://github.com/andreeaflorescu)
+- [Chao Peng](https://github.com/chao-p)
+- [Jenny Mankin](https://github.com/jennymankin)
+- [Jiang Liu](https://github.com/jiangliu)
+- [Laura Loghin](https://github.com/lauralt)
+- [Paolo Bonzini](https://github.com/bonzini)
+- [Patrick Roy](https://github.com/roypat)
+- [Rob Bradford](https://github.com/rbradford)
+- [Samuel Ortiz](https://github.com/sameo)
+- [Sebastien Boeuf](https://github.com/sboeuf)
+- [Stefano Garzarella](https://github.com/stefano-garzarella)
+- [Jonathan Woollett-Light](https://github.com/JonathanWoollett-Light)
+- [Zach Reizner](https://github.com/zachreizner)
+
+[^1]: As of 2024/03/21
