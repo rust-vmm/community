@@ -23,7 +23,7 @@ As a repository maintainer you have the following responsibilities:
 - make sure that the
   [quality guidelines](README.md#publishing-on-cratesio---requirements-list)
   are followed before publishing a new crate or a new version.
-- follow the [crate release process](docs/maintainers/crate_release.md) for
+- follow the [crate release process](docs/crate_release.md) for
   publishing new crate versions
 
 The repository maintainers are mentioned in the `CODEOWNERS` file of all
