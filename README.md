@@ -61,14 +61,14 @@ rust-vmm organization. One repository corresponds usually to one
   solution should only need to care about its specialized component, an API
   and the glue code that provides the interactions between them.
 - **Security & Testability**. One of the most salient feature of rust-vmm is
-  its high quality components. We want to keep a high quality standard
+  its high-quality components. We want to keep a high quality-standard
   as these virtualization packages are used in production by multiple projects.
-  Each component is individually tested with a set of common build time tests
-  responsible for running unit tests, linters (including coding style
+  Each component is individually tested with a set of common build-time tests
+  responsible for running unit tests, linters (including coding-style
   checks), and computing the coverage. For critical components that handle
   untrusted input we also run fuzzing
-  (i.e in [vm-virtio](https://github.com/rust-vmm/vm-virtio)), and provide a
-  [threat model documentation](https://github.com/rust-vmm/vm-superio#threat-model)
+  (i.e in [vm-virtio](https://github.com/rust-vmm/vm-virtio)), and provide
+  [threat-model documentation](https://github.com/rust-vmm/vm-superio#threat-model)
   that customers can use to improve the security of their solutions.
 - **Clean interface**. As crates are shared between multiple VMMs, the reviews
   for interface changes will typically go through a few rounds of reviews to
