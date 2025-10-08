@@ -59,6 +59,161 @@ that are published to crates.io the release process includes publishing a new
 version. Ask one of the maintainers to give you permissions for the crate
 on crates.io.
 
+## Inactive CODEOWNERS Policy
+
+To maintain an accurate view of repository health and ensure an efficient PR
+review process, we have implemented a policy for managing inactive CODEOWNERS
+(see [issue #187](https://github.com/rust-vmm/community/issues/187) for
+details).
+
+### Inactivity Definition
+
+A CODEOWNER is considered inactive after **1 year** without any review activity
+(comments, approvals, etc.) in a repository.
+
+### Removal Process
+
+1. Regular checks (e.g. monthly) will identify CODEOWNERS who haven't been
+   active in a year
+2. An issue will be opened in the community repository tagging all inactive
+   CODEOWNERS
+3. After a 1-month notification period, inactive members will be gracefully
+   removed from the `CODEOWNERS` file
+4. The required number of approvals per PR should be adjusted to align with
+   the current number of active maintainers
+
+### Re-adding Removed CODEOWNERS
+
+Being removed from CODEOWNERS doesn't mean someone isn't wanted as a maintainer
+anymore. It's simply to keep track of how many active maintainers we have and
+monitor project health. Anyone removed can easily be re-added as a maintainer
+whenever they wish to become active again by:
+- Pinging the current maintainers, or
+- Opening a PR against the `CODEOWNERS` file to re-add themselves
+
+**Note:** The gatekeeper inactivity policy has been deferred until the monorepo
+migration is complete, at which point gatekeepers will be "codeowners for the
+repo root" and can be handled by this policy automatically.
+
+### Checking for Inactive CODEOWNERS
+
+The [rust-vmm-ci](https://github.com/rust-vmm/rust-vmm-ci/) repository contains
+the `codeowners/check_inactive_codeowners.py` script. It can help with the
+process of identifying inactive CODEOWNERS by checking their activity
+(PR reviews, PR/issue comments, and optionally commits) in one or more repositories.
+
+**Requirements:**
+- Python 3 with dependencies from `codeowners/requirements.txt` (install with `pip install -r codeowners/requirements.txt`)
+- GitHub personal access token (optional but recommended, set as `GITHUB_TOKEN` environment variable)
+
+**Basic usage:**
+```bash
+export GITHUB_TOKEN=your_token_here
+python codeowners/check_inactive_codeowners.py
+```
+
+**Common options:**
+- `--repos`: Comma-separated repository name(s) to check (if not specified, checks all repos in the organization)
+- `--org`: GitHub organization (default: rust-vmm)
+- `--days`: Number of days to check for activity (default: 365)
+- `--until`: End date for activity check in YYYY-MM-DD format (default: today)
+- `--verbose` or `-v`: Enable detailed debug output including API queries and individual activity found
+- `--include-commits`: Include commit count in activity check (default: only reviews and comments)
+
+The script will:
+1. Fetch all repositories from the organization (if `--repos` is not specified)
+2. Skip archived repositories
+3. Fetch the CODEOWNERS file from each repository (trying common locations)
+4. Skip repositories with no CODEOWNERS file or empty CODEOWNERS
+5. Extract individual GitHub usernames (team references are not supported)
+6. Check if users exist on GitHub
+7. Check each user's activity over the specified period (PR reviews, PR/issue comments, and optionally commits)
+8. Report inactive and non-existent users with a summary
+
+**Exit codes:**
+- `0`: All CODEOWNERS are active
+- `1`: There are inactive CODEOWNERS
+- `2`: Errors occurred while querying GitHub
+
+**Notes:**
+- The script uses PyGithub to efficiently batch GitHub API queries for checking activity.
+- Without a GitHub token, the script will work but slower due to lower
+  [rate limits](https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api)
+  (60 requests/hour vs 5000 requests/hour with authentication).
+- You can generate a token at https://github.com/settings/tokens
+
+### Notification Issue Template
+
+When inactive CODEOWNERS are identified, an issue should be created in the
+community repository using this template:
+
+```markdown
+Title: Inactive CODEOWNERS Notification - [Month Year]
+
+# Inactive CODEOWNERS Notification
+
+During our regular audit, we identified CODEOWNERS who haven't had any review
+activity (comments, approvals, etc.) in their respective repositories for over
+1 year.
+
+The following users are affected:
+
+@username1 @username2 @username3 ...
+
+## Next Steps
+
+According to our [Inactive CODEOWNERS Policy](https://github.com/rust-vmm/community/blob/main/MAINTAINERS.md#inactive-codeowners-policy):
+
+1. We will wait **1 month** from the date of this issue before proceeding with
+   any removals
+2. If you are still interested in maintaining your repository, please comment on
+   this issue or resume review activity
+3. If you are no longer able to maintain the repository, no action is needed -
+   we will proceed with the removal after the notification period
+4. You can be re-added as a CODEOWNER at any time in the future by pinging
+   current maintainers or opening a PR
+
+Being removed from CODEOWNERS doesn't mean you aren't wanted as a maintainer.
+It's simply to help us track active maintainers and adjust approval rules
+accordingly.
+
+If you have any questions or concerns, please comment below.
+
+**Removal Date:** [Date 1 month from issue creation]
+```
+
+### Removal PR Template
+
+After the notification period expires, a PR should be created to remove
+inactive CODEOWNERS using this template:
+
+```markdown
+Title: Remove inactive CODEOWNERS - [Month Year]
+
+# Remove Inactive CODEOWNERS
+
+This PR removes CODEOWNERS who have been inactive for over 1 year and were
+notified in https://github.com/rust-vmm/community/issues/[issue-number].
+
+## Changes
+
+- Removed inactive CODEOWNERS: @username1 @username2 @username3 ...
+- Adjusted PR approval requirements where needed to match the new number of
+  active maintainers
+
+## Notification
+
+All affected CODEOWNERS were notified on [date] via https://github.com/rust-vmm/community/issues/[issue-number]
+and given a 1-month period to respond.
+
+## Policy Reference
+
+This removal follows our [Inactive CODEOWNERS Policy](https://github.com/rust-vmm/community/blob/main/MAINTAINERS.md#inactive-codeowners-policy).
+
+Removed maintainers can be re-added at any time by opening a PR or pinging
+current maintainers.
+```
+
 ## The Gatekeeper Role
 
 The wider organization is managed by a team
