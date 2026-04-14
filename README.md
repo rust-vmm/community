@@ -193,6 +193,10 @@ You can join our community discussions on any of the following places:
 * Join our
   [Slack channel](https://join.slack.com/t/rust-vmm/shared_invite/enQtODAxMzA2ODIyMTc2LWRhYjIwZmQ0YzUxODJlMTRhZWU2ZDBjYmJiNzBmOWVmYjg4MjY5YWRjYjM0YzQ5YzgyMTBmYzNlMjMzYmZlODU).
 
+### rust-vmm Project And Community Infrastructure
+
+See [infrastructure docs](INFRASTRUCTURE.md].
+
 ### Contributing Guidelines
 
 All the rust-vmm repositories accept contributions by a
