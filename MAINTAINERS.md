@@ -238,6 +238,7 @@ to
 - [Jenny Mankin](https://github.com/jennymankin)
 - [Jiang Liu](https://github.com/jiangliu)
 - [Laura Loghin](https://github.com/lauralt)
+- [Manos Pitsidianakis](https://github.com/epilys)
 - [Paolo Bonzini](https://github.com/bonzini)
 - [Patrick Roy](https://github.com/roypat)
 - [Rob Bradford](https://github.com/rbradford)
@@ -247,4 +248,4 @@ to
 - [Jonathan Woollett-Light](https://github.com/JonathanWoollett-Light)
 - [Zach Reizner](https://github.com/zachreizner)
 
-[^1]: As of 2024/03/21
+[^1]: As of 2026/04/23
