@@ -1,8 +1,9 @@
 # rust-vmm maintainers
 
 In rust-vmm we have two types of maintainers:
-- [gatekeepers](#gatekeepers) that have admin permissions over all rust-vmm
-  repositories, and are responsible for the general health of the project.
+- [gatekeepers](#list-of-gatekeepers1) that have admin permissions over all
+  rust-vmm repositories, and are responsible for the general health of the
+  project.
 - repository maintainer that have admin permissions and are responsible for
   the health of one or more rust-vmm repositories.
 
