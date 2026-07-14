@@ -47,7 +47,7 @@ a code owner, open a PR in the target repository, add their GitHub handle in
 the `CODEOWNERS` file, and ask that person to formally approve the PR as
 acknowledgement that they agree with the role.
 2. Irrespective of who created the PR, all existing code owners (as defined in
-the`CODEOWNERS` file) must approve the PR before it is merged. In case
+the `CODEOWNERS` file) must approve the PR before it is merged. In case
 there are no code owners in the repository, ask [2 gatekeepers](#gatekeepers)
 to approve the PR for you.
 3. Once the PR is merged, ask one of the existing code owners to grant you
