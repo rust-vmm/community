@@ -226,7 +226,7 @@ Gatekeepers may get assigned as PR reviewers when a rust-vmm
 repository is lacking code owners, or when a previously assigned reviewer is not
 able to review a pending PR.
 
-If you want to adopt repsonsibility to help with the project, it is preferable
+If you want to adopt responsibility to help with the project, it is preferable
 to
 [become a repository maintainers instead](#becoming-a-repository-maintainer).
 
