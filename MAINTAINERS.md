@@ -76,7 +76,7 @@ A CODEOWNER is considered inactive after **1 year** without any review activity
 
 1. Regular checks (e.g. monthly) will identify CODEOWNERS who haven't been
    active in a year
-2. An issue will be opened in the community repository tagging all inactive
+2. An issue will be opened in the affected repository tagging all inactive
    CODEOWNERS
 3. After a 1-month notification period, inactive members will be gracefully
    removed from the `CODEOWNERS` file
@@ -146,7 +146,7 @@ The script will:
 ### Notification Issue Template
 
 When inactive CODEOWNERS are identified, an issue should be created in the
-community repository using this template:
+affected repository using this template:
 
 ```markdown
 Title: Inactive CODEOWNERS Notification - [Month Year]
@@ -194,7 +194,7 @@ Title: Remove inactive CODEOWNERS - [Month Year]
 # Remove Inactive CODEOWNERS
 
 This PR removes CODEOWNERS who have been inactive for over 1 year and were
-notified in https://github.com/rust-vmm/community/issues/[issue-number].
+notified in #[issue-number].
 
 ## Changes
 
@@ -204,7 +204,7 @@ notified in https://github.com/rust-vmm/community/issues/[issue-number].
 
 ## Notification
 
-All affected CODEOWNERS were notified on [date] via https://github.com/rust-vmm/community/issues/[issue-number]
+All affected CODEOWNERS were notified on [date] via #[issue-number]
 and given a 1-month period to respond.
 
 ## Policy Reference
