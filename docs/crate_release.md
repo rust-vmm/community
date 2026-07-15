@@ -164,3 +164,43 @@ git push -u origin local_vm-awesome-v1.2.1_release
    **Pay attention to the branch against which you open the PR**. PRs need to be
    open against the `vX.Y.Z_release` branch (`vm-awesome-v1.2.1_release` in the example
    above).
+
+## Automated crates.io publishing
+
+A CI workflow can be added to automate publishing to crates.io when you push a specific tag pattern.
+
+To set this up, open a PR adding the workflow file, and after it is merged, follow these steps:
+
+> 1. Go to your crate's Settings → Trusted Publishing
+> 2. Click the "Add" button and fill in:
+>     - Repository owner: Your GitHub username or organization
+>     - Repository name: The name of your repository
+>     - Workflow filename: The filename of your GitHub Actions workflow (e.g., "release.yml")
+>     - Environment: Optional environment name if you're using GitHub environments
+> 3. Save the configuration
+
+Documentation: <https://crates.io/docs/trusted-publishing>
+
+Workflow template: (e.g. `.github/workflows/release-[package-name].yml`)
+
+```yaml
+name: Publish [package name] to crates.io
+
+on:
+  push:
+    tags: ['[package name]-v*']  # Triggers when pushing tags starting with '[package name]-v'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    # environment: release  # Optional: for enhanced security
+    permissions:
+      id-token: write     # Required for OIDC token exchange
+    steps:
+    - uses: actions/checkout@v4
+    - uses: rust-lang/crates-io-auth-action@v1
+      id: auth
+    - run: cargo publish --package [package name]
+      env:
+        CARGO_REGISTRY_TOKEN: ${{ steps.auth.outputs.token }}
+```
