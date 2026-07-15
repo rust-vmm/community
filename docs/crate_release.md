@@ -1,13 +1,19 @@
 # Crate Release
 
-1. [Prerequisites](#prerequisites)
-2. [Regular Release](#regular-release)
-3. [Patch Release](#patch-release)
+This document describes the process of creating a crate release, that is,
+tagging a new version of a library/binary and optionally publishing it to
+<https://crates.io>.
 
-## Prerequisites
+A crate release involves two independent processes:
 
-Releases can be created by all [rust-vmm maintainers](../MAINTAINERS.md),
-and the code owners of each repository.
+- A github release in the repository that contains the crate
+- (Optional) a crates.io release, if the crate is published there
+
+Github releases can be created by all rust-vmm gatekeepers and repository maintainers.
+
+Crates.io releases can be published by all rust-vmm gatekeepers and crate owners.
+
+See also [`MAINTAINERS.md`](../MAINTAINERS.md).
 
 ## Regular Release
 
