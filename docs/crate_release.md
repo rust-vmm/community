@@ -15,6 +15,19 @@ Crates.io releases can be published by all rust-vmm gatekeepers and crate owners
 
 See also [`MAINTAINERS.md`](../MAINTAINERS.md).
 
+## Table of Contents
+
+<!-- mdformat-toc start --slug=github --no-anchors --maxlevel=6 --minlevel=1 -->
+
+- [Crate Release](#crate-release)
+  - [Table of Contents](#table-of-contents)
+  - [Versioning](#versioning)
+  - [Regular Release](#regular-release)
+  - [Patch Release](#patch-release)
+  - [Automated crates.io publishing](#automated-cratesio-publishing)
+
+<!-- mdformat-toc end -->
+
 ## Versioning
 
 The rust-vmm project generally follows Semantic Versioning ([SemVer](https://semver.org/)) as dictated by the Rust project: <https://doc.rust-lang.org/cargo/reference/semver.html>
