@@ -37,7 +37,7 @@ After a PR is submitted against one of the rust-vmm repositories, it will be
 tested and reviewed:
 
 - The repository
-  [continuous integration (CI)](https://github.com/rust-vmm/community#ci---wip)
+  [continuous integration (CI)](./README.md#ci)
   automatically tests the submitted changes.
 - The PR changes will be [manually reviewed](#pr-review-and-approval). We
   expect the review comments to be addressed through the same PR.
