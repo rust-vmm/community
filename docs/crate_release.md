@@ -98,10 +98,11 @@ Fixed
 8. Create a GitHub release. Go to the Releases page in the crate's repository
    and click Draft a new release (button on the right). In Tag version, pick
    the newly pushed tag. In Release title, write the tag name including v
-   (example: vm-awesome-v1.2.3). The description should be the new version's
+   (example: `vm-awesome-v1.2.3`). The description should be the new version's
    changelog section. Click Publish release.
+
 9. Publish the new version to crates.io. To double-check what's being
-   published, do a dry run first. Make sure your HEAD is on the release tag.
+   published, do a dry run first. Make sure your `HEAD` is on the release tag.
 
 ```bash
 cargo publish --dry-run
@@ -147,5 +148,5 @@ git push -u origin local_vm-awesome-v1.2.1_release
 
 2. Follow the steps 2-8 from the [Regular Release process](#regular-release).
    **Pay attention to the branch against which you open the PR**. PRs need to be
-   open against the vX.Y.Z_release branch (vm-awesome-v1.2.1_release in the example
+   open against the `vX.Y.Z_release` branch (`vm-awesome-v1.2.1_release` in the example
    above).
