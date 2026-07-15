@@ -12,6 +12,26 @@ Note that we do not have a process for removing maintainers and gatekeepers.
 This means that not all the people mentioned in this document might still be
 active in the project.
 
+## Table of Contents
+
+<!-- mdformat-toc start --slug=github --no-anchors --maxlevel=6 --minlevel=1 -->
+
+- [rust-vmm maintainers](#rust-vmm-maintainers)
+  - [Table of Contents](#table-of-contents)
+  - [Repository Maintainer](#repository-maintainer)
+    - [Becoming a Repository Maintainer](#becoming-a-repository-maintainer)
+  - [Inactive CODEOWNERS Policy](#inactive-codeowners-policy)
+    - [Inactivity Definition](#inactivity-definition)
+    - [Removal Process](#removal-process)
+    - [Re-adding Removed `CODEOWNERS`](#re-adding-removed-codeowners)
+    - [Checking for Inactive `CODEOWNERS`](#checking-for-inactive-codeowners)
+    - [Notification Issue Template](#notification-issue-template)
+    - [Removal PR Template](#removal-pr-template)
+  - [The Gatekeeper Role](#the-gatekeeper-role)
+    - [List of Gatekeepers](#list-of-gatekeepers)
+
+<!-- mdformat-toc end -->
+
 ## Repository Maintainer
 
 As a repository maintainer you have the following responsibilities:
