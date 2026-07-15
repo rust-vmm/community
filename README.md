@@ -49,7 +49,7 @@ rust-vmm organization. One repository corresponds usually to one
   to accommodate the needs of the
   [Xen](https://github.com/rust-vmm/xen-sys) and
   [Hyper-v](https://github.com/rust-vmm/mshv) hypervisor by way of bindings
-  and low level access libraries.  Other open source projects such as
+  and low level access libraries. Other open source projects such as
   [Cloud Hypervisor](https://github.com/cloud-hypervisor/cloud-hypervisor),
   the [Qemu virtiofsd implementation](https://gitlab.com/virtio-fs/virtiofsd)
   and [vhost-device](https://github.com/rust-vmm/vhost-device) have also been
@@ -99,11 +99,11 @@ A rust-vmm crate can have one of the following states:
    relevance to the project, but either no code has been submitted yet or
    the initial code base is being reviewed through a pull request.
 
-1. `rust-vmm`: The code is a work in progress. Once it meets the production
+2. `rust-vmm`: The code is a work in progress. Once it meets the production
    [requirements](#publishing-on-cratesio---requirements-list), the crate
    will be pushed to [crates.io](https://crates.io).
 
-1. `crates.io`: The crate is considered to be production ready. It can be
+3. `crates.io`: The crate is considered to be production ready. It can be
    consumed from Rust's canonical crate registry:
    [crates.io](https://crates.io). The crate repository in rust-vmm
    is as a staging area until the next push to [crates.io](https://crates.io).
@@ -120,7 +120,7 @@ These are the empty repositories that have PRs waiting to be merged.
 
 ### rust-vmm
 
-- [acpi\_tables](https://github.com/rust-vmm/acpi_tables): code for generating
+- [`acpi_tables`](https://github.com/rust-vmm/acpi_tables): code for generating
   ACPI tables.
 - [mshv](https://github.com/rust-vmm/mshv): workspace for Microsoft Hypervisor
   safe wrappers.
@@ -188,14 +188,14 @@ their responsibilities are available in the [Maintainers Docs](MAINTAINERS.md).
 
 You can join our community discussions on any of the following places:
 
-* Join our
+- Join our
   [mailing list](http://lists.opendev.org/cgi-bin/mailman/listinfo/rust-vmm).
-* Join our
+- Join our
   [Slack channel](https://join.slack.com/t/rust-vmm/shared_invite/enQtODAxMzA2ODIyMTc2LWRhYjIwZmQ0YzUxODJlMTRhZWU2ZDBjYmJiNzBmOWVmYjg4MjY5YWRjYjM0YzQ5YzgyMTBmYzNlMjMzYmZlODU).
 
 ### rust-vmm Project And Community Infrastructure
 
-See [infrastructure docs](INFRASTRUCTURE.md].
+See [infrastructure docs](INFRASTRUCTURE.md).
 
 ### Contributing Guidelines
 
