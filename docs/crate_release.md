@@ -15,6 +15,14 @@ Crates.io releases can be published by all rust-vmm gatekeepers and crate owners
 
 See also [`MAINTAINERS.md`](../MAINTAINERS.md).
 
+## Versioning
+
+The rust-vmm project generally follows Semantic Versioning ([SemVer](https://semver.org/)) as dictated by the Rust project: <https://doc.rust-lang.org/cargo/reference/semver.html>
+
+This is a loose requirement since it's not currently checked in CI.
+
+Tools like <https://github.com/obi1kenobi/cargo-semver-checks> can be used to detect SemVer violations.
+
 ## Regular Release
 
 This section outlines the steps required to publish crates from both single
