@@ -1,0 +1,6 @@
+wrap = "keep"
+number = true
+extensions = [
+    "gfm",
+    "toc",
+]
