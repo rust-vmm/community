@@ -4,17 +4,28 @@ This repository provides an overview of the rust-vmm project, its crates,
 guiding principles, and the development model.
 
 ## Table of Contents
-- [What is rust-vmm?](#what-is-rust-vmm)
-- [Why rust-vmm?](#why-rust-vmm)
-- [The rust-vmm Components](#the-rust-vmm-components)
-- [Development](#development)
-  - [Maintainers and Gatekeepers](#maintainers-and-gatekeepers)
-  - [Community Channels](#community-channels)
-  - [Contributing Guidelines](#contributing-guidelines)
-  - [Adding a New Virtualization Component](#adding-a-new-virtualization-component)
-  - [Publishing on crates.io - Requirements List](#publishing-on-cratesio---requirements-list)
-  - [CI](#ci)
-  - [Extended Development Documentation](#extended-development-documentation)
+
+<!-- mdformat-toc start --slug=github --no-anchors --maxlevel=6 --minlevel=1 -->
+
+- [The rust-vmm Community](#the-rust-vmm-community)
+  - [Table of Contents](#table-of-contents)
+  - [What Is rust-vmm?](#what-is-rust-vmm)
+  - [Why rust-vmm?](#why-rust-vmm)
+  - [The rust-vmm components](#the-rust-vmm-components)
+    - [empty](#empty)
+    - [rust-vmm](#rust-vmm)
+    - [crates.io](#cratesio)
+  - [Development](#development)
+    - [Maintainers and Gatekeepers](#maintainers-and-gatekeepers)
+    - [Community Channels](#community-channels)
+    - [rust-vmm Project And Community Infrastructure](#rust-vmm-project-and-community-infrastructure)
+    - [Contributing Guidelines](#contributing-guidelines)
+    - [Adding a New Virtualization Component](#adding-a-new-virtualization-component)
+    - [Publishing on crates.io - Requirements List](#publishing-on-cratesio---requirements-list)
+    - [CI](#ci)
+    - [Extended Development Documentation](#extended-development-documentation)
+
+<!-- mdformat-toc end -->
 
 ## What Is rust-vmm?
 
