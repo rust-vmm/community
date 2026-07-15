@@ -4,6 +4,19 @@ Contributions to rust-vmm are welcome!
 
 :hammer: But this file is still under construction. :hammer:
 
+## Table of Contents
+
+<!-- mdformat-toc start --slug=github --no-anchors --maxlevel=6 --minlevel=1 -->
+
+- [Contributing to rust-vmm](#contributing-to-rust-vmm)
+  - [Table of Contents](#table-of-contents)
+  - [Merging code in rust-vmm](#merging-code-in-rust-vmm)
+    - [Developer Certificate of Origin](#developer-certificate-of-origin)
+    - [PR workflow](#pr-workflow)
+    - [PR review and approval](#pr-review-and-approval)
+
+<!-- mdformat-toc end -->
+
 ## Merging code in rust-vmm
 
 To contribute to rust-vmm, you need to open a Pull Request (PR) against the
