@@ -23,7 +23,7 @@ are the ones that have no dependencies on crates from the same
 workspace. For example, the `virtio-device` crate depends on `virtio-queue`,
 so `virtio-queue` has to be published first. Workspace crates may include
 both path and version information for dependencies from the same repository.
-The  former is used during testing to validate against the most recent changes
+The former is used during testing to validate against the most recent changes
 (and is discarded during the publishing process; more details
 [here](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html#multiple-locations)),
 while the latter represents what ends up being used after a crate is published.
@@ -98,7 +98,7 @@ Fixed
 8. Create a GitHub release. Go to the Releases page in the crate's repository
    and click Draft a new release (button on the right). In Tag version, pick
    the newly pushed tag. In Release title, write the tag name including v
-   (example: vm-awesome-v1.2.3). The description should be the new version's 
+   (example: vm-awesome-v1.2.3). The description should be the new version's
    changelog section. Click Publish release.
 9. Publish the new version to crates.io. To double-check what's being
    published, do a dry run first. Make sure your HEAD is on the release tag.
@@ -109,15 +109,15 @@ cargo publish
 ```
 
 10. If this is the first time you publish a release of that crate on crates.io
-   don't forget to grant permissions to the rust-vmm gatekeepers team and all
-   the code owners (as specified in the `CODEOWNERS` file of the repository being
-   published). If you are a code owner, but not a gatekeeper, you won't be
-   able to add the gatekeepers team, only a member of that team is allowed to.
-   In this case, you have to ask a code owner who is also a gatekeeper to
-   grant this permission, and in case none of the code owners is a gatekeeper,
-   you will have to add as an owner a gatekeeper as well (with the second
-   command provided below). That gatekeeper can then add the gatekeepers team
-   as an owner.
+    don't forget to grant permissions to the rust-vmm gatekeepers team and all
+    the code owners (as specified in the `CODEOWNERS` file of the repository being
+    published). If you are a code owner, but not a gatekeeper, you won't be
+    able to add the gatekeepers team, only a member of that team is allowed to.
+    In this case, you have to ask a code owner who is also a gatekeeper to
+    grant this permission, and in case none of the code owners is a gatekeeper,
+    you will have to add as an owner a gatekeeper as well (with the second
+    command provided below). That gatekeeper can then add the gatekeepers team
+    as an owner.
 
 ```bash
 cargo owner --add github:rust-vmm:gatekeepers
