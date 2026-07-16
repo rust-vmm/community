@@ -243,10 +243,11 @@ to
 - [Paolo Bonzini](https://github.com/bonzini)
 - [Patrick Roy](https://github.com/roypat)
 - [Rob Bradford](https://github.com/rbradford)
+- [Ruoqing He](https://github.com/RuoqingHe)
 - [Samuel Ortiz](https://github.com/sameo)
 - [Sebastien Boeuf](https://github.com/sboeuf)
 - [Stefano Garzarella](https://github.com/stefano-garzarella)
 - [Jonathan Woollett-Light](https://github.com/JonathanWoollett-Light)
 - [Zach Reizner](https://github.com/zachreizner)
 
-[^1]: As of 2026/04/23
+[^1]: As of 2026/07/16
