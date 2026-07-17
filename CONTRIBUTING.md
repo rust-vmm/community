@@ -42,7 +42,7 @@ PR reviewers are selected as follows:
 - If the repository has a `CODEOWNERS` file, both reviewers are randomly picked
   from there.
 - If the repository does not have explicit code owners, both reviewers are
-  chosen from the rust-vmm [gatekeepers](MAINTAINERS.md#gatekeepers) list.
+  chosen from the rust-vmm [gatekeepers](MAINTAINERS.md#list-of-gatekeepers) list.
 
 Sometimes a selected reviewer does not have the available bandwidth, time or
 expertise to do a proper review. In such cases a new reviewer must be assigned
